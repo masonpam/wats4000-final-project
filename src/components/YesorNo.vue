@@ -26,10 +26,8 @@ export default {
   name: 'YesorNo',
   data () {
     return {
-      results: null,
-      errors: [],
-      phrase: '',
-      rhyme: ''
+      prediction: null,
+      errors: []
     }
   },
   methods: {
