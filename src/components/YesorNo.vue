@@ -8,8 +8,8 @@
       <p>Ask a Yes or No question: <input type="text"> <button type="submit">Submit</button></p>
     </form>
     
-    <div v-if="answer" class="answer">
-        <p>{{ answer.answer }}, <img :src="answer.image"></p>
+    <div v-if="prediction" class="prediction">
+        <p>{{ prediction.answer }}, <img :src="prediction.image"></p>
     </div>
 
     <ul v-if="errors.length > 0" class="errors">
