@@ -1,12 +1,11 @@
 <template>
   <div id="app">
-    <h1>Yes or No.  Get the answers!</h1>
-    <router-view/>
+    <YesorNo/>
   </div>
 </template>
 
 <script>
-import YesorNo from '@/components/YesorNo'
+import YesorNo from './components/YesorNo'
 
 export default {
   name: 'App',
