@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <YesorNo/>
+    <h1>Yes or No.  Get the answers!</h1>
   </div>
 </template>
 
