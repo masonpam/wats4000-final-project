@@ -27,7 +27,7 @@ export default {
   data () {
     return {
       prediction: null,
-      errors: []
+      errors: [],
     }
   },
   methods: {
