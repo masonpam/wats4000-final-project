@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import YesorNo from './components/YesorNo'
+import YesorNo from '@/components/YesorNo'
 
 export default {
   name: 'App',
