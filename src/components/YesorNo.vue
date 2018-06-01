@@ -7,13 +7,7 @@
     <form v-on:submit.prevent="yesno">
       <p>Ask a Yes or No question: <input type="text"> <button type="submit">Submit</button></p>
     </form>
-    <ul v-if="results && results.length > 0" class="results">
-      <li v-for="item of results" class="item">
-        <p><strong>{{ item.word }}</strong></p>
-        <p>{{ item.score }}</p>
-      </li>
-    </ul>
-
+    
     <div v-if="answer" class="answer">
         <p>{{ answer.answer }}, <img :src="answer.image"></p>
     </div>
