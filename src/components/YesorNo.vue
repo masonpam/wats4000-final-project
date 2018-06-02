@@ -4,7 +4,7 @@
   <router-link v-bind:to="{name: 'YesorNo'}">Yes or No </router-link>
   &bull;
   </p>
-    <form v-on:submit.prevent="yesno">
+    <form v-on:submit.prevent="YesorNo">
       <p>Ask a Yes or No question: <input type="text"> <button type="submit">Submit</button></p>
     </form>
     
