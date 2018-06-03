@@ -62,7 +62,7 @@ input[type="text"]{
   padding: 0.5rem;
 }
 button{
-  background: #001a00;
+  background: #003300;
   padding: 0.5rem;
   font-weight: 300;
   color: #fff;
