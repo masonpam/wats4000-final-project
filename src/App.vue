@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>Yes or No.  What will it be?</h1>
+     <router-view/>
   </div>
 </template>
 
