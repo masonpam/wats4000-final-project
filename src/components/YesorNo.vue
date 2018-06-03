@@ -62,10 +62,10 @@ input[type="text"]{
   padding: 0.5rem;
 }
 button{
-  background: #333;
+  background: #001a00;
   padding: 0.5rem;
   font-weight: 300;
-  color: #001a00;
+  color: #fff;
   border: none;
   cursor: pointer;
   font-size: 1.4rem;
@@ -73,7 +73,6 @@ button{
 h1, h2 {
   font-weight: normal;
 }
-
 ul.errors {
   list-style-type: none;
 }
