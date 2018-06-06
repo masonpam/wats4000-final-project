@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import YesorNo from './components/YesorNo'
+import YesorNo from './components/YesorNo';
+import CubeSpinner from './components/CubeSpinner';
 
 export default {
   name: 'App',

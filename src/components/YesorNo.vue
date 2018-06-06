@@ -28,15 +28,19 @@ export default {
     return {
       prediction: null,
       errors: [],
+      showSpinner: false,
     }
   },
   methods: {
     YesorNo: function() {
+      this.showSpinner = true;
       axios.get('https://yesno.wtf/api') 
      .then( response => {
+        this.showSpinner = false;
         this.prediction = response.data;
       })
       .catch( error => {
+        this.showSpinner = false;
         this.errors.push(error);
       })
     }
