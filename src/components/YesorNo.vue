@@ -8,9 +8,13 @@
       <p>Ask a Yes or No question: <input type="text"> <button type="submit">Submit</button></p>
     </form>
     
+     <ul v-if="results && results.length > 0" class="results">
+      <div>
+        <spinner v-if="showSpinner"></spinner>
+      </div>
+    </ul>
     <div v-if="prediction" class="prediction">
         <p>{{ prediction.answer }}, <img :src="prediction.image"></p>
-        <spinner v-if="showSpinner"></spinner></spinner>
     </div>
 
     <ul v-if="errors.length > 0" class="errors">
