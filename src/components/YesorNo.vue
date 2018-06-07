@@ -38,6 +38,7 @@ export default {
   methods: {
     YesorNo: function() {
       this.showSpinner = true;
+      this.results = null;
       axios.get('https://yesno.wtf/api') 
      .then( response => {
         this.showSpinner = false;
