@@ -6,7 +6,6 @@
 
 <script>
 import YesorNo from './components/YesorNo';
-import CubeSpinner from './components/CubeSpinner';
 
 export default {
   name: 'App',
@@ -26,8 +25,5 @@ export default {
   margin-top: 60px;
   background-color: #eef0e9;
   padding: 40px;
-}
-h1 {
-  color: #003300;
 }
 </style>
