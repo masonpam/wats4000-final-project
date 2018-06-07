@@ -13,7 +13,6 @@
     </div>
     <div class="results-container">
       <spinner v-if="showSpinner"></spinner>
-      <p><img :src="results[0].url_m"></p>
       </div>
     <ul v-if="errors.length > 0" class="errors">
       <li v-for="error of errors">
@@ -25,6 +24,8 @@
 
 <script>
 import axios from 'axios';
+import Cubespinner from '@/components/CubeSpinner';
+
 export default {
   name: 'YesorNo',
   data () {
