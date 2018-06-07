@@ -28,6 +28,9 @@ import Cubespinner from '@/components/CubeSpinner';
 
 export default {
   name: 'YesorNo',
+  components: {
+    spinner: CubeSpinner
+  },
   data () {
     return {
       prediction: null,
@@ -46,10 +49,10 @@ export default {
       .catch( error => {
         this.showSpinner = false;
         this.errors.push(error);
-      })
+        })
+      }
     }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
