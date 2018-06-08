@@ -30,9 +30,6 @@ import Cubespinner from '@/components/CubeSpinner';
 
 export default {
   name: 'YesorNo',
-  components: {
- spinner: CubeSpinner, 
-},
   data () {
     return {
       prediction: null,
