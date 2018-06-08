@@ -1,7 +1,7 @@
 <template>
   <div class="yes-or-no">
     <p>
-  <router-link v-bind:to="{name: 'YesorNo'}">Yes or No </router-link>
+  <router-link v-bind:to="{name: 'YesorNo'}">Yes or No.  Get the answers!</router-link>
   &bull;
   </p>
     <form v-on:submit.prevent="YesorNo">
@@ -10,11 +10,11 @@
     
     <div v-if="prediction" class="prediction">
         <p>{{ prediction.answer }}, <img :src="prediction.image"></p>
-         <div>
-        <spinner v-if="showSpinner"></spinner>
-      </div>
     </div>
     <ul v-if="results && results.length > 0" class="results">
+       <div>
+        <spinner v-if="showSpinner"></spinner>
+      </div>
     </ul>
     <ul v-if="errors.length > 0" class="errors">
       <li v-for="error of errors">
@@ -30,6 +30,9 @@ import Cubespinner from '@/components/CubeSpinner';
 
 export default {
   name: 'YesorNo',
+  components: {
+ spinner: CubeSpinner, 
+},
   data () {
     return {
       prediction: null,
