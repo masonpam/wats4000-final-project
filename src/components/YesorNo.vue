@@ -13,7 +13,7 @@
     </div>
     <div class="results-container">
       <spinner v-if="showSpinner"></spinner>
-       <h2 v-if="results && results.length > 0">{{ results.length }} Thinking...</h2>
+      <transition-group name="fade" tag="div" appear>
       <ul v-if="results && results.length > 0" class="results">
       </div>
     <ul v-if="errors.length > 0" class="errors">
