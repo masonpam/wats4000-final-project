@@ -7,20 +7,19 @@
     <form v-on:submit.prevent="YesorNo">
       <p>Ask a Yes or No question: <input type="text"> <button type="submit">Submit</button></p>
     </form>
-    
+    <div class="results-container">
+     <spinner v-if="showSpinner"></spinner>
     <div v-if="prediction" class="prediction">
         <p>{{ prediction.answer }}, <img :src="prediction.image"></p>
     </div>
     <ul v-if="results && results.length > 0" class="results">
-       <div>
-        <spinner v-if="showSpinner"></spinner>
-      </div>
     </ul>
     <ul v-if="errors.length > 0" class="errors">
       <li v-for="error of errors">
         {{ error.message }}
       </li>
     </ul>
+   </div>
   </div>
 </template>
 
