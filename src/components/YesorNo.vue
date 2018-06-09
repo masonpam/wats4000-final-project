@@ -11,9 +11,10 @@
     <div v-if="prediction" class="prediction">
         <p>{{ prediction.answer }}, <img :src="prediction.image"></p>
     </div>
-    <ul v-if="results && results.length > 0" class="results">
-       <div>
+   <ul v-if="results && results.length > 0" class="results">
+      <div>
         <spinner v-if="showSpinner"></spinner>
+        <p><img :src="results[0].url_m"></p>
       </div>
     </ul>
     <ul v-if="errors.length > 0" class="errors">
